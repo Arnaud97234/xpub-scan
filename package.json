@@ -7,9 +7,11 @@
     "type": "git",
     "url": "git+https://github.com:LedgerHQ/xpub-scan.git"
   },
+  "files": ["build/"],
   "scripts": {
     "build": "tsc -p .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc -p ."
   },
   "author": "Guillaume Lethuillier",
   "license": "MIT",
@@ -25,6 +27,8 @@
     "bitcoin-cash-payments": "^0.2.0",
     "bitcoinjs-lib": "^5.2.0",
     "chalk": "^4.1.0",
+    "coininfo": "^5.1.0",
+    "dateformat": "^4.5.1",
     "es6-promise": "^4.2.8",
     "html-minifier": "^4.0.0",
     "line-reader": "^0.4.0",
@@ -45,8 +49,6 @@
     "@types/dateformat": "^3.0.1",
     "@types/html-minifier": "^4.0.0",
     "@types/minimist": "^1.2.1",
-    "coininfo": "^5.1.0",
-    "dateformat": "^4.5.1",
     "eslint": "^7.20.0",
     "eslint-plugin-prettier": "^3.3.1",
     "prettier": "^2.2.1"
